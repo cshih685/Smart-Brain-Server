@@ -73,7 +73,7 @@ app.listen(process.env.PORT || 3000, ()=>{ //if we can run on heroku then run on
 })
 
 app.get('/', (req, res) => {
-	res.send(database.users);
+	res.send('it is working!');
 })
 
 app.post('/signin', signin.handleSignin(db, bcrypt)) // another way to send parameters
